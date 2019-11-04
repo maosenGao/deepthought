@@ -111,5 +111,5 @@ def import_dataset(source_path, target_path):
     # load data
     mat_files = glob.glob(os.path.join(source_path,'*/*.mat'))
 
-    print mat_files
+    print (mat_files)
     import_eeglab_sets(mat_files, target_path)

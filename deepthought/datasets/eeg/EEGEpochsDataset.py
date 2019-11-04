@@ -159,7 +159,7 @@ class EEGEpochsDataset(Dataset):
             trial = db.data[trial_i]
 
             if np.isnan(np.sum(trial)):
-                print trial_i, trial
+                print (trial_i, trial)
 
             assert not np.isnan(np.sum(trial))
 
@@ -347,7 +347,7 @@ class EEGEpochsDataset(Dataset):
             WRITEME
         """
         if self.debug:
-            print 'get', indexes
+            print( 'get', indexes)
 
         if type(indexes) is slice:
             indexes = np.arange(indexes.start, indexes.stop)
