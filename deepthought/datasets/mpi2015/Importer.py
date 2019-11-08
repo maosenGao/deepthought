@@ -5,7 +5,9 @@ Created on Jan 19, 2015
 '''
 import os
 import glob
-
+import sys
+sys.path.append("G:\Documents\GitHub\deepthought")
+import deepthought.util
 import logging
 log = logging.getLogger(__name__)
 
